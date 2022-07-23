@@ -1,0 +1,840 @@
+body{
+    margin: 0;
+    background-color: rgb(148, 177, 185);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    color: aqua
+}
+
+.category-header {
+    position: relative;
+    text-align: center;
+    top: 150px;
+    left: 250px;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(156, 69, 149, 0.1);
+}
+
+.category-header h1 {
+    margin: auto;
+    width: 100%;
+    font-size: 40px;
+}
+
+/*popup*/
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    width: 200%;
+    height: 250%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6;
+}
+#modal:target{
+    visibility: visible !important;
+    opacity: 1;
+}
+
+#modal:target .modal-content{
+    opacity: 1;
+    visibility: visible !important;
+}
+
+
+.modal-content {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.cate1 .modalthis a{
+    float: right;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.cate1 .modalthis a:hover{
+    background-color: rgb(231, 225, 225);
+}
+
+.modalthis a{
+    text-decoration: none;
+}
+
+.cate1 .modalthis ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.modal-close {
+    font-size: 50px;
+    position: absolute;
+    left: 1180px;
+    top: -10px;
+}
+
+/*font size and color for 3 category header*/
+.JAB {
+    font-size: 30px;
+    color: darkgreen;
+}
+
+.SAB {
+    font-size: 30px;
+    color: blue;
+}
+
+.FAB {
+    font-size: 30px;
+    color: lightpink;
+}
+
+/*remove the underline for JAB*/
+.cate1 .category-link a{
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+.content-book1 a{
+    text-decoration: none;
+}
+
+.cate1 .category-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+/*remove the underline for SAB*/
+.cate2 .category-link a{
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+.content-book2 a{
+    text-decoration: none;
+}
+
+.cate2 .category-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+/*remove the underline for FAB*/
+.cate3 .category-link a{
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+.content-book3 a{
+    text-decoration: none;
+}
+
+.cate3 .category-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+/*header the responsive one*/
+.header{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 4px rgba(156, 69, 149, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+/*set category box1*/
+.category-box1{
+    position:relative;
+    width: 1200px;
+    height: 350px;
+    margin :240px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgb(231, 225, 225);
+}
+
+.category-box1 .cate1 {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+/*cate1 box1 */
+.category-box1 .cate1 .box1 {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: rgb(183, 246, 105);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*cate1 book1 box*/
+.cate1 .box1 .icon-r1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/jung1.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate1 .box1:hover .icon-r1{
+    background-image: none;
+    background-color: brown;
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate1 .box1 .icon-r1 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate1 .box1:hover .icon-r1 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*cate1 box1 .icon-r2*/
+.cate1 .box1 .icon-r2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/jung2.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate1 .box1:hover .icon-r2{
+    background-image: none;
+    background-color: brown;
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate1 .box1 .icon-r2 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate1 .box1:hover .icon-r2 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*cate1 box1 icon-r3*/
+.cate1 .box1 .icon-r3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/jung3.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate1 .box1:hover .icon-r3{
+    background-image: none;
+    background-color: brown;   
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate1 .box1 .icon-r3 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate1 .box1:hover .icon-r3 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*content in the book*/
+.cate1 .box1 .content-book1 {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.cate1 .box1:hover .content-book1 {
+    top: 100px;
+    opacity: 1;
+}
+
+/*change setting of the content*/
+.cate1 .box1 .content-book1 h4 {
+    margin  : 0 0 10px;
+    padding: 0;
+    color: darkblue;
+    font-size: 20px;
+}
+
+.cate1 .box1 .content-book1 p {
+    margin  : 0 0 10px;
+    padding: 0;
+    color: darkblue;
+    font-size: 20px;
+}
+
+/*set category box2*/
+.category-box2{
+    position:relative;
+    width: 1200px;
+    height: 350px;
+    margin :240px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgb(231, 225, 225);
+}
+
+.category-box2 .cate2 {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+/*cate2 box2 */
+.category-box2 .cate2 .box2 {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: rgb(121, 86, 27);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*cate2 book2 box2*/
+.cate2 .box2 .icon-a1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/sea1.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate2 .box2:hover .icon-a1{
+    background-image: none;
+    background-color: rgb(169, 52, 190);
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate2 .box2 .icon-a1 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate2 .box2:hover .icon-a1 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*cate2 box2 .icon-a2*/
+.cate2 .box2 .icon-a2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/sea2.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate2 .box2:hover .icon-a2{
+    background-image: none;
+    background-color: rgb(169, 52, 190);
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate2 .box2 .icon-a2 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate2 .box2:hover .icon-a2 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*cate2 box2 icon-a3*/
+.cate2 .box2 .icon-a3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/sea3.jpg);
+    background-size: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate2 .box2:hover .icon-a3{
+    background-image: none;
+    background-color: rgb(169, 52, 190);
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate2 .box2 .icon-a3 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate2 .box2:hover .icon-a3 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*content in the book*/
+.cate2 .box2 .content-book2 {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.cate2 .box2:hover .content-book2 {
+    top: 100px;
+    opacity: 1;
+}
+
+.cate2 .box2 .content-book2 h4 {
+    margin  : 0 0 10px;
+    padding: 0;
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.cate2 .box2 .content-book2 p {
+    margin  : 0 0 10px;
+    padding: 0;
+    color: aquamarine;
+}
+
+/*set category box3*/
+.category-box3{
+    position:relative;
+    width: 1200px;
+    height: 350px;
+    margin :240px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgb(231, 225, 225);
+}
+
+.category-box3 .cate3 {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+/*cate3 box3 */
+.category-box3 .cate3 .box3 {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: rgb(151, 59, 191);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*cate3 book3 box3*/
+.cate3 .box3 .icon-h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/fan1.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate3 .box3:hover .icon-h1{
+    background-image: none;
+    background-color: rgb(199, 89, 188);
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate3 .box3 .icon-h1 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate3 .box3:hover .icon-h1 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*cate3 box3 .icon-h2*/
+.cate3 .box3 .icon-h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/fan2.jpg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate3 .box3:hover .icon-h2{
+    background-image: none;
+    background-color: rgb(199, 89, 188);
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate3 .box3 .icon-h2 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate3 .box3:hover .icon-h2 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*cate3 box3 icon-h3*/
+.cate3 .box3 .icon-h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/redirect/adventure/fan3.jpg);
+    background-size: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.cate3 .box3:hover .icon-h3{
+    background-image: none;
+    background-color: rgb(199, 89, 188);
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.cate3 .box3 .icon-h3 .fa{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-size: 80px;
+    transition: 0.6s;
+}
+
+.cate3 .box3:hover .icon-h3 .fa{
+    font-size: 40px;
+    display: inline;
+    overflow: hidden;
+}
+
+/*content in the book*/
+.cate3 .box3 .content-book3 {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.cate3 .box3:hover .content-book3 {
+    top: 100px;
+    opacity: 1;
+}
+
+.cate3 .box3 .content-book3 h4 {
+    margin  : 0 0 10px;
+    padding: 0;
+    color: darkred;
+    font-size: 20px;
+}
+
+.cate3 .box3 .content-book3 p {
+    margin  : 0 0 10px;
+    padding: 0;
+    color: rgb(181, 244, 158);
+}
+
+/*bottom footer*/
+.for-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+.for-footer ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    float: right;
+}
+
+.for-footer ul a:hover {
+    background-color: rgb(79, 58, 58);
+}
+
+/*header*/
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.header ul a {
+    display:block;
+    padding: 20px;
+    text-decoration: none;
+}
+/*color for button */
+.header ul a:hover{
+    background-color: rgb(79, 58, 58);
+}
+
+.header .menu a:active {
+    background-color: aquamarine;
+    color: black;
+}
+
+.header .logo {
+    float: left;
+    padding: 10px 20px;
+}
+/* Mobile display */
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .4s ease-out;
+}
+
+.header .icon-checkbox {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .icon-checkbox .nav-icon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .icon-checkbox .nav-icon::before {
+    background: #fff;
+    content: "";
+    display:block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .icon-checkbox .nav-icon::after {
+    background: #fff;
+    content: "";
+    display:block;
+    height: 100%;
+    width: 100%;    
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .button-checkbox {
+    display: none;
+}
+
+.header .button-checkbox:checked ~ .menu{
+    max-height: 300px;
+}
+
+.header .button-checkbox:checked ~.icon-checkbox .nav-icon{
+    background: transparent;
+}
+
+.header .button-checkbox:checked ~.icon-checkbox .nav-icon::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header .button-checkbox:checked ~.icon-checkbox .nav-icon::after{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+@media (min-width: 960px) {
+    .header li{
+        float: left;
+    }
+
+    .header li a{
+        padding: 25px 30px;
+    }
+
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .icon-checkbox{
+        display: none;
+    }
+}
