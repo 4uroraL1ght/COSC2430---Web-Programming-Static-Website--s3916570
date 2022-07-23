@@ -5,7 +5,7 @@ body{
 }
 
 nav a{
-    color: aqua
+    color: aqua;
 }
 
 .category-header {
@@ -69,7 +69,7 @@ a:link, a:visited {
 .cate1 .modalthis a{
     float: right;
     text-decoration: none;
-    color: blueviolet;
+    color: aqua;
 }
 
 .cate1 .modalthis a:hover{
@@ -737,6 +737,7 @@ header ul {
     display:block;
     padding: 20px;
     text-decoration: none;
+    color: aqua;
 }
 /*color for button */
 .header ul a:hover{
