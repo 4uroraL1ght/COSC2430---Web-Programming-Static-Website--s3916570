@@ -22,26 +22,81 @@ a{
     font-size: 40px;
 }
 
-.romance {
-    font-size: 30px;
-    color: rgb(108, 32, 148);
-}
-
-.cate1 .category-link a{
-    display: block;
+/*popup*/
+a:link, a:visited {
     text-decoration: none;
-    float: left;
 }
 
-.cate1 .category-link ul {
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    width: 200%;
+    height: 250%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6;
+}
+#modal:target{
+    visibility: visible !important;
+    opacity: 1;
+}
+
+#modal:target .modal-content{
+    opacity: 1;
+    visibility: visible !important;
+}
+
+
+.modal-content {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.cate1 .modalthis a{
+    float: right;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.cate1 .modalthis a:hover{
+    background-color: rgb(231, 225, 225);
+}
+
+.modalthis a{
+    text-decoration: none;
+}
+
+.cate1 .modalthis ul {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
 }
 
-.content-book1 a{
-    text-decoration: none;
+.modal-close {
+    font-size: 50px;
+    position: absolute;
+    left: 1180px;
+    top: -10px;
+}
+
+/*font size and color for 3 category header*/
+.romance {
+    font-size: 30px;
+    color: rgb(108, 32, 148);
 }
 
 .adventure {
@@ -54,6 +109,61 @@ a{
     color: goldenrod;
 }
 
+/*remove the underline for romance*/
+.cate1 .category-link a{
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+.content-book1 a{
+    text-decoration: none;
+}
+
+.cate1 .category-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+/*remove the underline for adventure*/
+.cate2 .category-link a{
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+.content-book2 a{
+    text-decoration: none;
+}
+
+.cate2 .category-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+/*remove the underline for history*/
+.cate3 .category-link a{
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+.content-book3 a{
+    text-decoration: none;
+}
+
+.cate3 .category-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+/*header the responsive one*/
 .header{
     background-color: rgb(0, 0, 0);
     box-shadow: 1px 1px 4px rgba(156, 69, 149, 0.1);
