@@ -10,6 +10,7 @@ a{
 
 .category-header {
     position: relative;
+    text-align: center;
     top: 150px;
     left: 250px;
     width: 100%;

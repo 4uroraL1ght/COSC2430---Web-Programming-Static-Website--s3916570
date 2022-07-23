@@ -19,36 +19,33 @@ a{
     background: rgb(231, 225, 225);
 }
 
-.picture-box {
-    position: relative;
-    float: left;
-    width: 700px;
-    height: 800px;
+h3 {
+    color: darkgreen;
 }
 
-.main-box .picture-box .pic1 .box1 {
+.main-box .picture-box .picture-box {
     position: relative;
-    width: calc(700px - 375px);
-    height: calc(550px - 30px);
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+
+.main-box .picture-box .display-content {
+    text-align: left;
+    margin: 5px;
+}
+
+.main-box .picture-box .pic1 {
+    position: relative;
+    width: calc(850px - 30px);
+    height: calc(600px - 30px);
     background: rgb(238, 124, 227);
     float: left;
-    margin: 15px;
+    margin: 0px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
 }
-
-.main-box .picture-box .pic1 .box1 {
-    position: relative;
-    width: calc(700px - 375px);
-    height: calc(550px - 30px);
-    background: rgb(238, 124, 227);
-    margin: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
 
 .main-box .picture-box .pic1 .icon-advdtl1{
     position: absolute;
@@ -56,11 +53,10 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/redirect/book-detail/adventure-detail/book1-adventure.jpg);
+    background-image: url(/redirect/book-detail/adventure-detail/pic.png);
     transition: 0.5s;
     z-index: 1;
 }
-
 
 /*header the responsive one*/
 .header{
